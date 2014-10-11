@@ -28,11 +28,28 @@
 ### Tulburări de ritm
 #### Flutter
 #### Fibrilație atrială
+##### cu conducere foarte rapidă
 #### Tahicardie ventriculară
-#### Fivrilație ventriculară
+#### Fibrilație ventriculară
 #### Torsada vârfurilor
+#### Sindrom Wolff-Parkinson-White
+#### Stop Cardiac
+
+### Obstacole de ejecție
+#### Stenoză aortică
+
+### Obstacole de umplere
+#### Cardiomiopatie hipertrofică obstructivă
+#### 
+
+### Tumori
+#### Tumori obstructive
+##### Mixom
+
 
 ## Pneumologie
+### Embolie pulmonară
+
 ## Neurologie
 ## Endocrinologie
 ## Medicină Internă
