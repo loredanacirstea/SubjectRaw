@@ -7,7 +7,7 @@
   <link href="libs/jquery.splitter.css" rel="stylesheet"/>
   <link rel="stylesheet" href="libs/themes/default/style.min.css" />
   <link href="libs/jquery.contextMenu.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="libs/jquery.contextMenu.js" type="text/javascript"></script>
     
     <script type="text/x-mathjax-config;executed=true">
@@ -29,7 +29,7 @@
 
     </script>
 <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
 </script>
 
     
@@ -39,8 +39,8 @@
 <script src="libs/jstree.min.js"></script>
 <script src="libs/keymaster.min.js"></script>
 
-<script src="http://rawgithub.com/ajaxorg/ace-builds/master/src/ace.js" type="text/javascript" charset="utf-8"></script>
-<script src="http://rawgithub.com/ajaxorg/ace-builds/master/src/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://rawgithub.com/ajaxorg/ace-builds/master/src/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://rawgithub.com/ajaxorg/ace-builds/master/src/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
 
 
 
@@ -525,7 +525,7 @@ var temp_li = [], temp_ul = [], level_ul=0,editor=null;
                 var href = "md.html?view=text&url=subject/data/eng/"+path[0].replace(/[^\w]+/g, '-').toLowerCase()+".md#"+path[1].replace(/[^\w]+/g, '-').toLowerCase();
                 break;
               case "openIn_GScholar":
-                var href = "http://scholar.google.com/scholar?hl=en&q="+path[1]+"&btnG=&as_sdt=1%2C5&as_sdtp="
+                var href = "https://scholar.google.com/scholar?hl=en&q="+path[1]+"&btnG=&as_sdt=1%2C5&as_sdtp="
                 break;
               case "openIn_Google":
                 var href = "https://www.google.com/?gws_rd=ssl#newwindow=1&q="+text;
@@ -535,7 +535,7 @@ var temp_li = [], temp_ul = [], level_ul=0,editor=null;
                 break; 
 
               case "openIn_Wikipedia":
-                var href = "http://en.wikipedia.org/w/index.php?title=Special:Search&search="+path[1]+"&profile=default";
+                var href = "https://en.wikipedia.org/w/index.php?title=Special:Search&search="+path[1]+"&profile=default";
                 break;
               default:
                 
@@ -935,7 +935,7 @@ renderCard = function(type,id,dims,text,url){
   var out = "",img = '',r=6;
   if (url == undefined || url == "") url= "none.svg"
   img ='<img src="subject/data/image/'+url+'" width="'+dims.h*3+'" height="'+dims.h*3+'"  style="position:relative;border:0px;" />'
-  img = '<svg width="'+dims.h*3+'" height="'+dims.h*3+'" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><rect ry="100" rx="100" id="svg_21" height="1024" width="1024" y="0" x="0" fill="#bfbfbf"/><text transform="matrix(4,0,0,4,-850,-415.6) " font-weight="bold" xml:space="preserve" text-anchor="middle" font-family="Helvetica" font-size="216" id="svg_2" y="300" x="330" fill="#7f7f7f">?</text></svg>';
+  img = '<svg width="'+dims.h*3+'" height="'+dims.h*3+'" viewbox="0 0 1024 1024" xmlns="https://www.w3.org/2000/svg"><rect ry="100" rx="100" id="svg_21" height="1024" width="1024" y="0" x="0" fill="#bfbfbf"/><text transform="matrix(4,0,0,4,-850,-415.6) " font-weight="bold" xml:space="preserve" text-anchor="middle" font-family="Helvetica" font-size="216" id="svg_2" y="300" x="330" fill="#7f7f7f">?</text></svg>';
   out = out+'<style>#id'+type+id+'{position: absolute;width:'+dims.w+'%;height:'+dims.h+'%;border-top-left-radius:'+r+'px;border-top-right-radius:'+r+'px;border-bottom-right-radius:'+r+'px;border-bottom-left-radius:'+r+'px;box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;left:'+dims.x+'%;top:'+dims.y+'%;background-color:#fff}</style><div onclick="process(\''+id+'\')" id="id'+type+id+'">'+img+'<div style="font-size:'+dims.h+'px;">'+text+'</div></div>';
   $("#content1").append(out)
 
